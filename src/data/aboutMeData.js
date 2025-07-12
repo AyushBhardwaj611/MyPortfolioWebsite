@@ -1,10 +1,10 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+		bio: 'I am a Computer Science undergraduate with a strong focus on backend development and scalable system design. During my internship at PixoSpace, I built modular microservices using Java, Spring Boot, Kafka, and MySQL, contributing to secure REST APIs and efficient database handling. I enjoy turning complex problems into clean, maintainable code and am passionate about backend architecture and cloud-based systems.',
 	},
 	{
 		id: 2,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+		bio: 'When I am not coding, I explore system design concepts, optimize SQL queries for fun, and enjoy collaborating on impactful tech projects. I believe in writing code that is not just functional, but thoughtful. Currently, I am looking for opportunities where I can apply my skills, keep learning, and contribute meaningfully to real-world products.',
 	},
 ];

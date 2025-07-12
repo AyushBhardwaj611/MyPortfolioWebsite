@@ -5,33 +5,38 @@ import {
 	FiGlobe,
 	FiYoutube,
 } from 'react-icons/fi';
+import LeetCodeIcon from '../../images/leetcode_gray.svg';
+import GitHubIcon from '../../images/githublogosmall.svg';
+import LinkedInIcon from '../../images/linkedinsmalllogo.svg';
+import GFGIcon from '../../images/gfgsmalllogo.svg';
+import EmailIcon from '../../images/emailsmalllogo.svg';
 import AppFooterCopyright from './AppFooterCopyright';
 
 const socialLinks = [
 	{
 		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://www.stoman.me/',
+		icon: <img src={EmailIcon} alt="Email" className="w-full h-full" />,
+		url: 'mailto:bhardwaj.ayush419@gmail.com',
 	},
 	{
 		id: 2,
-		icon: <FiGithub />,
-		url: 'https://github.com/realstoman',
+		icon: <img src={GitHubIcon} alt="GitHub" className="w-full h-full" />,
+		url: 'https://github.com/AyushBhardwaj611',
 	},
 	{
 		id: 3,
-		icon: <FiTwitter />,
-		url: 'https://twitter.com/realstoman',
+		icon: <img src={LeetCodeIcon} alt="LeetCode" className="w-full h-full" />,
+		url: 'https://leetcode.com/u/Ayush_Bhardwaj3351/',
 	},
 	{
 		id: 4,
-		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/realstoman',
+		icon: <img src={LinkedInIcon} alt="LinkedIn" className="w-full h-full" />,
+		url: 'https://linkedin.com/in/ayushbhardwaj419',
 	},
 	{
 		id: 5,
-		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/realstoman',
+		icon: <img src={GFGIcon} alt="GeeksforGeeks" className="w-full h-full" />,
+		url: 'https://www.geeksforgeeks.org/user/bhardwajar4b4/',
 	},
 ];
 
@@ -42,7 +47,7 @@ const AppFooter = () => {
 				{/* Footer social links */}
 				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
 					<p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
-						Follow me
+						Online Profiles
 					</p>
 					<ul className="flex gap-4 sm:gap-8">
 						{socialLinks.map((link) => (

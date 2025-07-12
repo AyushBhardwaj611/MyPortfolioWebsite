@@ -10,6 +10,26 @@ const selectOptions = [
 ];
 
 const HireMeModal = ({ onClose, onRequest }) => {
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		
+		// Get form data
+		const formData = new FormData(e.target);
+		const name = formData.get('name');
+		const email = formData.get('email');
+		const subject = formData.get('subject');
+		const message = formData.get('message');
+		
+		// Create mailto link
+		const mailtoLink = `mailto:bhardwaj.ayush419@gmail.com?subject=Project Inquiry: ${subject}&body=Hi Ayush,%0D%0A%0D%0AName: ${name}%0D%0AEmail: ${email}%0D%0AProject Type: ${subject}%0D%0A%0D%0AProject Description:%0D%0A${message}%0D%0A%0D%0ABest regards,%0D%0A${name}`;
+		
+		// Open mailto link
+		window.location.href = mailtoLink;
+		
+		// Close modal
+		onClose();
+	};
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -37,9 +57,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 						</div>
 						<div className="modal-body p-5 w-full h-full">
 							<form
-								onSubmit={(e) => {
-									e.preventDefault();
-								}}
+								onSubmit={handleSubmit}
 								className="max-w-xl m-4 text-left"
 							>
 								<div className="">
@@ -97,8 +115,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 
 								<div className="mt-6 pb-4 sm:pb-1">
-									<span
-										onClick={onClose}
+									<button
 										type="submit"
 										className="px-4
 											sm:px-6
@@ -112,7 +129,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										aria-label="Submit Request"
 									>
 										<Button title="Send Request" />
-									</span>
+									</button>
 								</div>
 							</form>
 						</div>

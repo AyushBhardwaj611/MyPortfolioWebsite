@@ -5,6 +5,9 @@ import Image3 from '../images/mobile-project-2.jpg';
 import Image4 from '../images/mobile-project-1.jpg';
 import Image5 from '../images/web-project-1.jpg';
 import Image6 from '../images/ui-project-2.jpg';
+import LeetCodeIcon from '../images/leetcode_gray.svg';
+import LinkedInIcon from '../images/linkedinsmalllogo.svg';
+import GFGIcon from '../images/gfgsmalllogo.svg';
 // Import icons
 import {
 	FiFacebook,
@@ -104,9 +107,9 @@ export const singleProjectData = {
 		SocialSharing: [
 			{
 				id: 1,
-				name: 'Twitter',
-				icon: <FiTwitter />,
-				url: 'https://twitter.com/realstoman',
+				name: 'LeetCode',
+				icon: <img src={LeetCodeIcon} alt="LeetCode" className="w-full h-full" />,
+				url: 'https://leetcode.com/u/Ayush_Bhardwaj3351/',
 			},
 			{
 				id: 2,
@@ -123,14 +126,14 @@ export const singleProjectData = {
 			{
 				id: 4,
 				name: 'LinkedIn',
-				icon: <FiLinkedin />,
-				url: 'https://linkedin.com/',
+				icon: <img src={LinkedInIcon} alt="LinkedIn" className="w-full h-full" />,
+				url: 'https://linkedin.com/in/ayushbhardwaj419',
 			},
 			{
 				id: 5,
-				name: 'Youtube',
-				icon: <FiYoutube />,
-				url: 'https://www.youtube.com/c/StomanStudio',
+				name: 'GeeksforGeeks',
+				icon: <img src={GFGIcon} alt="GeeksforGeeks" className="w-full h-full" />,
+				url: 'https://www.geeksforgeeks.org/user/bhardwajar4b4/',
 			},
 		],
 	},
